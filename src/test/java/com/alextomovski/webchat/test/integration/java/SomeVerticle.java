@@ -1,4 +1,4 @@
-package com.mycompany.myproject.test.integration.java;
+package com.alextomovski.webchat.test.integration.java;
 /*
  * Copyright 2013 Red Hat, Inc.
  *
