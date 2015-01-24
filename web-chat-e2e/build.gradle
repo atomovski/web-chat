@@ -1,12 +1,19 @@
-apply plugin: 'java'
+apply plugin: 'com.moowork.grunt'
 
-sourceCompatibility = 1.5
-version = '1.0'
+defaultTasks 'runE2E'
 
-repositories {
-    mavenCentral()
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.moowork.gradle:gradle-grunt-plugin:0.6'
+    }
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+task runE2E(description: 'Run the E2E tests.' ) {
+    installGrunt.dependsOn npmInstall
+    grunt_default.dependsOn installGrunt
+    dependsOn grunt_default
 }

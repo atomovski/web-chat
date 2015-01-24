@@ -1,0 +1,18 @@
+{
+  "name": "web-chat-e2e",
+  "version": "1.0.0",
+  "description": "E2E suite for the web-chat-mod",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Tomovski",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-protractor-runner": "^1.2.1",
+    "grunt-shell-spawn": "^0.3.1",
+    "protractor": "^1.6.1"
+  }
+}
